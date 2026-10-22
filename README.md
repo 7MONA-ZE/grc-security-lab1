@@ -38,11 +38,4 @@ Bridging technical system hardening controls with regulatory and corporate compl
 | **5.4.1** — Enforce maximum password age (`PASS_MAX_DAYS 365`)[cite: 1] | Internal Access Control Policy § 4.2[cite: 1] | ISO 27001 A.9.4.3, NIST AC-2 |
 | **6.2.6** — Prevent world-writable files | System Integrity Standard § 5.1 | SOC 2 CC6.3, PCI-DSS 2.2.2 |
 
-### Evidence Collection (CLI Commands)[cite: 1]
-To verify compliance and capture evidence for auditors:
-```bash
-# Check maximum password age configuration
-grep PASS_MAX_DAYS /etc/login.defs
 
-# Run automated system compliance audit
-lynis audit system
